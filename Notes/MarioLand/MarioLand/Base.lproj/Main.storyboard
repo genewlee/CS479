@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yYE-zt-sGc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Entry-->
+        <scene sceneID="tR6-Zm-zXs">
+            <objects>
+                <viewController id="DNN-Az-eGm" customClass="AddEntryViewController" customModule="MarioLand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JYv-2g-8sC"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4h-24-Se3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VIW-zv-yrd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwG-Es-x4R">
+                                <rect key="frame" x="16" y="154" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhq-jW-PWe">
+                                <rect key="frame" x="68" y="149" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vwG-Es-x4R" firstAttribute="top" secondItem="JYv-2g-8sC" secondAttribute="bottom" constant="54" id="B2F-Lu-aCs"/>
+                            <constraint firstItem="jhq-jW-PWe" firstAttribute="leading" secondItem="vwG-Es-x4R" secondAttribute="trailing" constant="2" id="Ftb-ga-qyt"/>
+                            <constraint firstItem="jhq-jW-PWe" firstAttribute="trailing" secondItem="VIW-zv-yrd" secondAttribute="trailingMargin" id="npc-Ka-GzV"/>
+                            <constraint firstItem="vwG-Es-x4R" firstAttribute="leading" secondItem="VIW-zv-yrd" secondAttribute="leadingMargin" id="qrN-PF-GuR"/>
+                            <constraint firstItem="vwG-Es-x4R" firstAttribute="centerY" secondItem="jhq-jW-PWe" secondAttribute="centerY" id="qws-lW-ej5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Entry" prompt="Mario" id="i9B-fW-hFr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="et7-A9-VOu">
+                            <connections>
+                                <action selector="cancelTapped:" destination="DNN-Az-eGm" id="zci-n2-kaZ"/>
+                                <segue destination="laD-hd-TIz" kind="unwind" unwindAction="unwindFromAddEntryWithSegue:" id="bhu-2b-BpP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NYI-5l-ikl">
+                            <connections>
+                                <action selector="saveTapped:" destination="DNN-Az-eGm" id="74y-87-we5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="jhq-jW-PWe" id="QfV-iQ-E6R"/>
+                        <segue destination="laD-hd-TIz" kind="unwind" identifier="unwindFromAddEntry" unwindAction="unwindFromAddEntryWithSegue:" id="P5c-0R-nGK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKH-cg-VkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="laD-hd-TIz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="-375.56221889055473"/>
+        </scene>
+        <!--Characters-->
+        <scene sceneID="6gK-F8-L8s">
+            <objects>
+                <tableViewController id="Brw-eR-dsn" customClass="TableViewController" customModule="MarioLand" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="n9W-ZT-0A8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="myCell" textLabel="rV7-10-ky2" style="IBUITableViewCellStyleDefault" id="7gQ-EB-JaX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gQ-EB-JaX" id="yR0-Vf-YYu">
+                                    <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rV7-10-ky2">
+                                            <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell2" id="TOf-JO-PzY">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TOf-JO-PzY" id="gkc-mY-GvS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Brw-eR-dsn" id="GDJ-13-sj6"/>
+                            <outlet property="delegate" destination="Brw-eR-dsn" id="7hF-k9-lpG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Characters" prompt="Mario Land" id="976-bb-GbG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YPv-uC-3cI">
+                            <connections>
+                                <segue destination="DNN-Az-eGm" kind="show" identifier="toAddEntry" id="Wx9-Gg-Ai9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="NIi-Pu-WkZ" kind="show" identifier="toDetail" id="aOb-Nw-0hb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hbo-8L-DA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="131.78410794602701"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="hux-6o-ctm">
+            <objects>
+                <viewController id="NIi-Pu-WkZ" customClass="DetailViewController" customModule="MarioLand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTT-Ih-kNV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bxJ-6k-Y9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FYg-rf-MXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kk5-Hd-rlC">
+                                <rect key="frame" x="165" y="159" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kk5-Hd-rlC" firstAttribute="top" secondItem="wTT-Ih-kNV" secondAttribute="bottom" constant="65" id="Q0A-pm-OCP"/>
+                            <constraint firstItem="Kk5-Hd-rlC" firstAttribute="centerX" secondItem="FYg-rf-MXt" secondAttribute="centerX" id="XeW-3b-Gh3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" prompt="Mario Land" id="NN6-qq-jI1"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="Kk5-Hd-rlC" id="Sdf-QN-2MQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xii-TP-UMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Et-He-R5Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yYE-zt-sGc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uJ9-MB-gsq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Brw-eR-dsn" kind="relationship" relationship="rootViewController" id="aJz-Z3-xnW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5C-WM-tkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
