@@ -16,10 +16,9 @@ class JokeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         initializeJokes()
-        chooseJoke()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         chooseJoke()
     }
 
@@ -83,6 +82,7 @@ class JokeViewController: UIViewController {
             SecondLineOutlet.text = ""
             ThirdLineOutlet.text = ""
             Punchline.text = ""
+            AnswerOutlet.setTitle("New Joke", for: .normal)
             return
         }
         

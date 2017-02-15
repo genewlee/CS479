@@ -21,8 +21,13 @@ class AddJokeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var AnswerTextField: UITextField!
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
-        if (Line1TextField.text?.isEmpty)! {
-            print("name empty")
+        if ((Line1TextField.text?.isEmpty)! || (AnswerTextField.text?.isEmpty)!) {
+            // Pop up alert to enter a first line and answer
+            let alertController = UIAlertController(title: "Oops", message: "Please enter at least Line 1 and Answer", preferredStyle: .alert)
+            let OkAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alertController.addAction(OkAction)
+            present(alertController, animated: true, completion: nil)
         } else {
             newJokeReady = true
             performSegue(withIdentifier: "unwindFromAddJoke", sender: nil)
