@@ -13,8 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var myTextLabel: UILabel!
     
     func updateText () {
-        let myText = UserDefaults.standard.string(forKey: "name_preference")!
-        myTextLabel.text = "Text Field = \(myText)"
+        //if (myTextLabel != nil) {
+            if let myText = UserDefaults.standard.string(forKey: "name_preference") {
+                myTextLabel.text = "Text Field = \(myText)"
+            } else {
+                myTextLabel.text = "Text Field = (empty)"
+            }
+            
+        //}
     }
 
     override func viewDidLoad() {
