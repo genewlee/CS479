@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B002EBE41E2DA0DE008BC94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */; };
+		B002EBE61E2DA0DE008BC94A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002EBE51E2DA0DE008BC94A /* ViewController.swift */; };
+		B002EBE91E2DA0DE008BC94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002EBE71E2DA0DE008BC94A /* Main.storyboard */; };
+		B002EBEB1E2DA0DE008BC94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */; };
+		B002EBEE1E2DA0DE008BC94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */; };
+		B03714661E32EA07001E535B /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03714651E32EA07001E535B /* Joke.swift */; };
+		B08EB23A1E680F92004CB190 /* Star Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B08EB2391E680F92004CB190 /* Star Filled-32.png */; };
+		B08EB23C1E680F98004CB190 /* Star-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B08EB23B1E680F98004CB190 /* Star-32.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B002EBE01E2DA0DE008BC94A /* Joker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B002EBE51E2DA0DE008BC94A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B002EBE81E2DA0DE008BC94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B002EBED1E2DA0DE008BC94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B002EBEF1E2DA0DE008BC94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03714651E32EA07001E535B /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		B08EB2391E680F92004CB190 /* Star Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star Filled-32.png"; path = "Images/Star Filled-32.png"; sourceTree = "<group>"; };
+		B08EB23B1E680F98004CB190 /* Star-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star-32.png"; path = "Images/Star-32.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B002EBDD1E2DA0DE008BC94A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B002EBD71E2DA0DE008BC94A = {
+			isa = PBXGroup;
+			children = (
+				B002EBE21E2DA0DE008BC94A /* Joker */,
+				B002EBE11E2DA0DE008BC94A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B002EBE11E2DA0DE008BC94A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B002EBE01E2DA0DE008BC94A /* Joker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B002EBE21E2DA0DE008BC94A /* Joker */ = {
+			isa = PBXGroup;
+			children = (
+				B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */,
+				B002EBE51E2DA0DE008BC94A /* ViewController.swift */,
+				B002EBE71E2DA0DE008BC94A /* Main.storyboard */,
+				B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */,
+				B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */,
+				B002EBEF1E2DA0DE008BC94A /* Info.plist */,
+				B03714651E32EA07001E535B /* Joke.swift */,
+				B08EB2391E680F92004CB190 /* Star Filled-32.png */,
+				B08EB23B1E680F98004CB190 /* Star-32.png */,
+			);
+			path = Joker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B002EBDF1E2DA0DE008BC94A /* Joker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B002EBF21E2DA0DE008BC94A /* Build configuration list for PBXNativeTarget "Joker" */;
+			buildPhases = (
+				B002EBDC1E2DA0DE008BC94A /* Sources */,
+				B002EBDE1E2DA0DE008BC94A /* Resources */,
+				B002EBDD1E2DA0DE008BC94A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joker;
+			productName = Joker;
+			productReference = B002EBE01E2DA0DE008BC94A /* Joker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B002EBD81E2DA0DE008BC94A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gene Lee";
+				TargetAttributes = {
+					B002EBDF1E2DA0DE008BC94A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZA2D47UJD6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B002EBDB1E2DA0DE008BC94A /* Build configuration list for PBXProject "Joker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B002EBD71E2DA0DE008BC94A;
+			productRefGroup = B002EBE11E2DA0DE008BC94A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B002EBDF1E2DA0DE008BC94A /* Joker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B002EBDE1E2DA0DE008BC94A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08EB23A1E680F92004CB190 /* Star Filled-32.png in Resources */,
+				B002EBEE1E2DA0DE008BC94A /* LaunchScreen.storyboard in Resources */,
+				B08EB23C1E680F98004CB190 /* Star-32.png in Resources */,
+				B002EBEB1E2DA0DE008BC94A /* Assets.xcassets in Resources */,
+				B002EBE91E2DA0DE008BC94A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B002EBDC1E2DA0DE008BC94A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B002EBE61E2DA0DE008BC94A /* ViewController.swift in Sources */,
+				B002EBE41E2DA0DE008BC94A /* AppDelegate.swift in Sources */,
+				B03714661E32EA07001E535B /* Joke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B002EBE71E2DA0DE008BC94A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B002EBE81E2DA0DE008BC94A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B002EBED1E2DA0DE008BC94A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B002EBF01E2DA0DE008BC94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B002EBF11E2DA0DE008BC94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B002EBF31E2DA0DE008BC94A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZA2D47UJD6;
+				INFOPLIST_FILE = Joker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WSU.Joker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B002EBF41E2DA0DE008BC94A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZA2D47UJD6;
+				INFOPLIST_FILE = Joker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WSU.Joker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B002EBDB1E2DA0DE008BC94A /* Build configuration list for PBXProject "Joker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B002EBF01E2DA0DE008BC94A /* Debug */,
+				B002EBF11E2DA0DE008BC94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B002EBF21E2DA0DE008BC94A /* Build configuration list for PBXNativeTarget "Joker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B002EBF31E2DA0DE008BC94A /* Debug */,
+				B002EBF41E2DA0DE008BC94A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B002EBD81E2DA0DE008BC94A /* Project object */;
+}

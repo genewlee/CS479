@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Joker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke Rater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9i-9b-ZRr">
+                                <rect key="frame" x="147" y="54" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDO-l4-aOI">
+                                <rect key="frame" x="166" y="131" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR4-Me-tTk">
+                                <rect key="frame" x="162" y="226" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="AnswerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfX-s5-r0H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niz-pG-34x">
+                                <rect key="frame" x="164" y="160" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punchline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vt-Lo-oaQ">
+                                <rect key="frame" x="150" y="264" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH6-4R-gJQ">
+                                <rect key="frame" x="164" y="192" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joke #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zus-xc-fKy">
+                                <rect key="frame" x="162" y="92" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="x4l-nS-zWj">
+                                <rect key="frame" x="92" y="299" width="32" height="32"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="7dz-lz-9sf"/>
+                                    <constraint firstAttribute="width" constant="32" id="YAU-Hj-IBi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="U6I-XT-ksb">
+                                <rect key="frame" x="132" y="299" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Sw0-ha-ygp"/>
+                                    <constraint firstAttribute="height" constant="32" id="iSo-dX-1dt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="Squ-UC-AA7">
+                                <rect key="frame" x="172" y="299" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Lha-v8-1ak"/>
+                                    <constraint firstAttribute="height" constant="32" id="dze-03-Gnj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-Sk-xiI">
+                                <rect key="frame" x="212" y="299" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="eDL-eQ-zmh"/>
+                                    <constraint firstAttribute="width" constant="32" id="wcA-HG-A3T"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="mMm-ct-wdz">
+                                <rect key="frame" x="252" y="299" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="CAh-eo-BzP"/>
+                                    <constraint firstAttribute="width" constant="32" id="ups-ve-OfB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="leading" secondItem="U6I-XT-ksb" secondAttribute="trailing" constant="8" id="3Cd-Ps-A6F"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="top" secondItem="x4l-nS-zWj" secondAttribute="top" id="3sC-md-Ova"/>
+                            <constraint firstItem="A9i-9b-ZRr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="6e4-pd-35l"/>
+                            <constraint firstItem="PR4-Me-tTk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8MZ-YF-Mx0"/>
+                            <constraint firstItem="mDO-l4-aOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8jH-Pp-dbf"/>
+                            <constraint firstItem="Niz-pG-34x" firstAttribute="top" secondItem="mDO-l4-aOI" secondAttribute="bottom" constant="8" id="F1x-pg-XLb"/>
+                            <constraint firstItem="SH6-4R-gJQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gle-Wz-gus"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="top" secondItem="BN8-Sk-xiI" secondAttribute="top" id="Msr-x9-Eb1"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="top" secondItem="U6I-XT-ksb" secondAttribute="top" id="OG8-XR-U9j"/>
+                            <constraint firstItem="zus-xc-fKy" firstAttribute="top" secondItem="A9i-9b-ZRr" secondAttribute="bottom" constant="17" id="UxG-BP-veJ"/>
+                            <constraint firstItem="PR4-Me-tTk" firstAttribute="top" secondItem="SH6-4R-gJQ" secondAttribute="bottom" constant="13.5" id="YrN-PY-u9f"/>
+                            <constraint firstItem="mDO-l4-aOI" firstAttribute="top" secondItem="zus-xc-fKy" secondAttribute="bottom" constant="18" id="cER-KQ-Yef"/>
+                            <constraint firstItem="A9i-9b-ZRr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdL-YA-R0W"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="top" secondItem="mMm-ct-wdz" secondAttribute="top" id="gN3-3c-MHZ"/>
+                            <constraint firstItem="mMm-ct-wdz" firstAttribute="leading" secondItem="BN8-Sk-xiI" secondAttribute="trailing" constant="8" id="i8b-C7-sgo"/>
+                            <constraint firstItem="zus-xc-fKy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nKR-g6-fkF"/>
+                            <constraint firstItem="5Vt-Lo-oaQ" firstAttribute="top" secondItem="PR4-Me-tTk" secondAttribute="bottom" constant="8" id="otn-Zz-BVb"/>
+                            <constraint firstItem="BN8-Sk-xiI" firstAttribute="leading" secondItem="Squ-UC-AA7" secondAttribute="trailing" constant="8" id="pWt-84-VN0"/>
+                            <constraint firstItem="SH6-4R-gJQ" firstAttribute="top" secondItem="Niz-pG-34x" secondAttribute="bottom" constant="11" id="pma-zD-SZp"/>
+                            <constraint firstItem="5Vt-Lo-oaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sr7-W4-3bc"/>
+                            <constraint firstItem="Niz-pG-34x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vet-JT-bIa"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="top" secondItem="5Vt-Lo-oaQ" secondAttribute="bottom" constant="14" id="x99-nf-zAW"/>
+                            <constraint firstItem="U6I-XT-ksb" firstAttribute="leading" secondItem="x4l-nS-zWj" secondAttribute="trailing" constant="8" id="xjK-KT-LHo"/>
+                            <constraint firstItem="Squ-UC-AA7" firstAttribute="centerX" secondItem="5Vt-Lo-oaQ" secondAttribute="centerX" id="y4a-6x-4Mz"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aVY-3T-cjY" appends="YES" id="tfL-X3-Uxz"/>
+                            <outletCollection property="gestureRecognizers" destination="hk3-Jo-zc9" appends="YES" id="Xd9-G6-vTl"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="AnswerOutlet" destination="PR4-Me-tTk" id="CgU-Jo-aMy"/>
+                        <outlet property="FirstLineOutlet" destination="mDO-l4-aOI" id="7uI-IE-WfV"/>
+                        <outlet property="JokeNumberLabel" destination="zus-xc-fKy" id="qWa-lx-JhU"/>
+                        <outlet property="Punchline" destination="5Vt-Lo-oaQ" id="La5-zV-7SS"/>
+                        <outlet property="SecondLineOutlet" destination="Niz-pG-34x" id="cB1-23-Efe"/>
+                        <outlet property="ThirdLineOutlet" destination="SH6-4R-gJQ" id="EoE-zU-3HY"/>
+                        <outlet property="fifthStarImage" destination="mMm-ct-wdz" id="KU8-2d-Kj0"/>
+                        <outlet property="firstStarImage" destination="x4l-nS-zWj" id="uNV-a5-NwK"/>
+                        <outlet property="fourthStarImage" destination="BN8-Sk-xiI" id="w07-SP-RE0"/>
+                        <outlet property="secondStarImage" destination="U6I-XT-ksb" id="xfl-tY-hZ7"/>
+                        <outlet property="thirdStarImage" destination="Squ-UC-AA7" id="ue7-VV-UjO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="aVY-3T-cjY">
+                    <connections>
+                        <action selector="swipeDetectedWithRecognizer:" destination="BYZ-38-t0r" id="tTO-j1-ixJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hk3-Jo-zc9">
+                    <connections>
+                        <action selector="swipeDetectedWithRecognizer:" destination="BYZ-38-t0r" id="AaK-gP-m0s"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Star-32.png" width="32" height="32"/>
+    </resources>
+</document>
