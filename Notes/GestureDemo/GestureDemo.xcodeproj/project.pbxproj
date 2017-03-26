@@ -12,6 +12,7 @@
 		B03E5C011E66449D002B0A8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03E5BFF1E66449D002B0A8A /* Main.storyboard */; };
 		B03E5C031E66449D002B0A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03E5C021E66449D002B0A8A /* Assets.xcassets */; };
 		B03E5C061E66449D002B0A8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03E5C041E66449D002B0A8A /* LaunchScreen.storyboard */; };
+		B099A67F1E68E4BB00315A8E /* ZorroGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099A67E1E68E4BB00315A8E /* ZorroGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B03E5C021E66449D002B0A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B03E5C051E66449D002B0A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B03E5C071E66449D002B0A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B099A67E1E68E4BB00315A8E /* ZorroGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZorroGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B03E5BFB1E66449D002B0A8A /* AppDelegate.swift */,
+				B099A67E1E68E4BB00315A8E /* ZorroGestureRecognizer.swift */,
 				B03E5BFD1E66449D002B0A8A /* ViewController.swift */,
 				B03E5BFF1E66449D002B0A8A /* Main.storyboard */,
 				B03E5C021E66449D002B0A8A /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B099A67F1E68E4BB00315A8E /* ZorroGestureRecognizer.swift in Sources */,
 				B03E5BFE1E66449D002B0A8A /* ViewController.swift in Sources */,
 				B03E5BFC1E66449D002B0A8A /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				B03E5C0C1E66449D002B0A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

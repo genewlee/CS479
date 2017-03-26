@@ -7,31 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B002EBE41E2DA0DE008BC94A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */; };
-		B002EBE61E2DA0DE008BC94A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002EBE51E2DA0DE008BC94A /* ViewController.swift */; };
-		B002EBE91E2DA0DE008BC94A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002EBE71E2DA0DE008BC94A /* Main.storyboard */; };
-		B002EBEB1E2DA0DE008BC94A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */; };
-		B002EBEE1E2DA0DE008BC94A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */; };
-		B03714661E32EA07001E535B /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03714651E32EA07001E535B /* Joke.swift */; };
-		B08EB23A1E680F92004CB190 /* Star Filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B08EB2391E680F92004CB190 /* Star Filled-32.png */; };
-		B08EB23C1E680F98004CB190 /* Star-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B08EB23B1E680F98004CB190 /* Star-32.png */; };
+		B0B002461E6F763500A05413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B002451E6F763500A05413 /* AppDelegate.swift */; };
+		B0B002481E6F763500A05413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B002471E6F763500A05413 /* ViewController.swift */; };
+		B0B0024B1E6F763500A05413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B002491E6F763500A05413 /* Main.storyboard */; };
+		B0B0024D1E6F763500A05413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B0024C1E6F763500A05413 /* Assets.xcassets */; };
+		B0B002501E6F763500A05413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B0024E1E6F763500A05413 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B002EBE01E2DA0DE008BC94A /* Joker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B002EBE51E2DA0DE008BC94A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B002EBE81E2DA0DE008BC94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B002EBED1E2DA0DE008BC94A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B002EBEF1E2DA0DE008BC94A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B03714651E32EA07001E535B /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
-		B08EB2391E680F92004CB190 /* Star Filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star Filled-32.png"; path = "Images/Star Filled-32.png"; sourceTree = "<group>"; };
-		B08EB23B1E680F98004CB190 /* Star-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Star-32.png"; path = "Images/Star-32.png"; sourceTree = "<group>"; };
+		B0B002421E6F763500A05413 /* SensorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B002451E6F763500A05413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0B002471E6F763500A05413 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0B0024A1E6F763500A05413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0B0024C1E6F763500A05413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0B0024F1E6F763500A05413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0B002511E6F763500A05413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B002EBDD1E2DA0DE008BC94A /* Frameworks */ = {
+		B0B0023F1E6F763500A05413 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,76 +35,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B002EBD71E2DA0DE008BC94A = {
+		B0B002391E6F763500A05413 = {
 			isa = PBXGroup;
 			children = (
-				B002EBE21E2DA0DE008BC94A /* Joker */,
-				B002EBE11E2DA0DE008BC94A /* Products */,
+				B0B002441E6F763500A05413 /* SensorDemo */,
+				B0B002431E6F763500A05413 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B002EBE11E2DA0DE008BC94A /* Products */ = {
+		B0B002431E6F763500A05413 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B002EBE01E2DA0DE008BC94A /* Joker.app */,
+				B0B002421E6F763500A05413 /* SensorDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B002EBE21E2DA0DE008BC94A /* Joker */ = {
+		B0B002441E6F763500A05413 /* SensorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B002EBE31E2DA0DE008BC94A /* AppDelegate.swift */,
-				B002EBE51E2DA0DE008BC94A /* ViewController.swift */,
-				B002EBE71E2DA0DE008BC94A /* Main.storyboard */,
-				B002EBEA1E2DA0DE008BC94A /* Assets.xcassets */,
-				B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */,
-				B002EBEF1E2DA0DE008BC94A /* Info.plist */,
-				B03714651E32EA07001E535B /* Joke.swift */,
-				B08EB2391E680F92004CB190 /* Star Filled-32.png */,
-				B08EB23B1E680F98004CB190 /* Star-32.png */,
+				B0B002451E6F763500A05413 /* AppDelegate.swift */,
+				B0B002471E6F763500A05413 /* ViewController.swift */,
+				B0B002491E6F763500A05413 /* Main.storyboard */,
+				B0B0024C1E6F763500A05413 /* Assets.xcassets */,
+				B0B0024E1E6F763500A05413 /* LaunchScreen.storyboard */,
+				B0B002511E6F763500A05413 /* Info.plist */,
 			);
-			path = Joker;
+			path = SensorDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B002EBDF1E2DA0DE008BC94A /* Joker */ = {
+		B0B002411E6F763500A05413 /* SensorDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B002EBF21E2DA0DE008BC94A /* Build configuration list for PBXNativeTarget "Joker" */;
+			buildConfigurationList = B0B002541E6F763500A05413 /* Build configuration list for PBXNativeTarget "SensorDemo" */;
 			buildPhases = (
-				B002EBDC1E2DA0DE008BC94A /* Sources */,
-				B002EBDE1E2DA0DE008BC94A /* Resources */,
-				B002EBDD1E2DA0DE008BC94A /* Frameworks */,
+				B0B0023E1E6F763500A05413 /* Sources */,
+				B0B0023F1E6F763500A05413 /* Frameworks */,
+				B0B002401E6F763500A05413 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Joker;
-			productName = Joker;
-			productReference = B002EBE01E2DA0DE008BC94A /* Joker.app */;
+			name = SensorDemo;
+			productName = SensorDemo;
+			productReference = B0B002421E6F763500A05413 /* SensorDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B002EBD81E2DA0DE008BC94A /* Project object */ = {
+		B0B0023A1E6F763500A05413 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Gene Lee";
 				TargetAttributes = {
-					B002EBDF1E2DA0DE008BC94A = {
+					B0B002411E6F763500A05413 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ZA2D47UJD6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = B002EBDB1E2DA0DE008BC94A /* Build configuration list for PBXProject "Joker" */;
+			buildConfigurationList = B0B0023D1E6F763500A05413 /* Build configuration list for PBXProject "SensorDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -118,57 +113,54 @@
 				en,
 				Base,
 			);
-			mainGroup = B002EBD71E2DA0DE008BC94A;
-			productRefGroup = B002EBE11E2DA0DE008BC94A /* Products */;
+			mainGroup = B0B002391E6F763500A05413;
+			productRefGroup = B0B002431E6F763500A05413 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B002EBDF1E2DA0DE008BC94A /* Joker */,
+				B0B002411E6F763500A05413 /* SensorDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B002EBDE1E2DA0DE008BC94A /* Resources */ = {
+		B0B002401E6F763500A05413 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08EB23A1E680F92004CB190 /* Star Filled-32.png in Resources */,
-				B002EBEE1E2DA0DE008BC94A /* LaunchScreen.storyboard in Resources */,
-				B08EB23C1E680F98004CB190 /* Star-32.png in Resources */,
-				B002EBEB1E2DA0DE008BC94A /* Assets.xcassets in Resources */,
-				B002EBE91E2DA0DE008BC94A /* Main.storyboard in Resources */,
+				B0B002501E6F763500A05413 /* LaunchScreen.storyboard in Resources */,
+				B0B0024D1E6F763500A05413 /* Assets.xcassets in Resources */,
+				B0B0024B1E6F763500A05413 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B002EBDC1E2DA0DE008BC94A /* Sources */ = {
+		B0B0023E1E6F763500A05413 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B002EBE61E2DA0DE008BC94A /* ViewController.swift in Sources */,
-				B002EBE41E2DA0DE008BC94A /* AppDelegate.swift in Sources */,
-				B03714661E32EA07001E535B /* Joke.swift in Sources */,
+				B0B002481E6F763500A05413 /* ViewController.swift in Sources */,
+				B0B002461E6F763500A05413 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B002EBE71E2DA0DE008BC94A /* Main.storyboard */ = {
+		B0B002491E6F763500A05413 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B002EBE81E2DA0DE008BC94A /* Base */,
+				B0B0024A1E6F763500A05413 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B002EBEC1E2DA0DE008BC94A /* LaunchScreen.storyboard */ = {
+		B0B0024E1E6F763500A05413 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B002EBED1E2DA0DE008BC94A /* Base */,
+				B0B0024F1E6F763500A05413 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,7 +168,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B002EBF01E2DA0DE008BC94A /* Debug */ = {
+		B0B002521E6F763500A05413 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +218,7 @@
 			};
 			name = Debug;
 		};
-		B002EBF11E2DA0DE008BC94A /* Release */ = {
+		B0B002531E6F763500A05413 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,29 +261,25 @@
 			};
 			name = Release;
 		};
-		B002EBF31E2DA0DE008BC94A /* Debug */ = {
+		B0B002551E6F763500A05413 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZA2D47UJD6;
-				INFOPLIST_FILE = Joker/Info.plist;
+				INFOPLIST_FILE = SensorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WSU.Joker;
+				PRODUCT_BUNDLE_IDENTIFIER = WSU.SensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		B002EBF41E2DA0DE008BC94A /* Release */ = {
+		B0B002561E6F763500A05413 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZA2D47UJD6;
-				INFOPLIST_FILE = Joker/Info.plist;
+				INFOPLIST_FILE = SensorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = WSU.Joker;
+				PRODUCT_BUNDLE_IDENTIFIER = WSU.SensorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,25 +288,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B002EBDB1E2DA0DE008BC94A /* Build configuration list for PBXProject "Joker" */ = {
+		B0B0023D1E6F763500A05413 /* Build configuration list for PBXProject "SensorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B002EBF01E2DA0DE008BC94A /* Debug */,
-				B002EBF11E2DA0DE008BC94A /* Release */,
+				B0B002521E6F763500A05413 /* Debug */,
+				B0B002531E6F763500A05413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B002EBF21E2DA0DE008BC94A /* Build configuration list for PBXNativeTarget "Joker" */ = {
+		B0B002541E6F763500A05413 /* Build configuration list for PBXNativeTarget "SensorDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B002EBF31E2DA0DE008BC94A /* Debug */,
-				B002EBF41E2DA0DE008BC94A /* Release */,
+				B0B002551E6F763500A05413 /* Debug */,
+				B0B002561E6F763500A05413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B002EBD81E2DA0DE008BC94A /* Project object */;
+	rootObject = B0B0023A1E6F763500A05413 /* Project object */;
 }
