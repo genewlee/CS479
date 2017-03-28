@@ -15,32 +15,35 @@ class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var finishLabel: UILabel!
     var startPoint: CGPoint!
     var finishPoint: CGPoint!
-    let heightLimit: CGFloat = 20.0
+    let heightLimit: CGFloat = 15.0
     var exceededLimit: Bool = false
+    var readyToTry: Bool = true // bool so that cannot try again until tryAgain is tapped
  
     func handlePan (recognizer: UIPanGestureRecognizer) {
-        let point = recognizer.location(in: self.view)
-        let xi = Int(point.x)
-        let yi = Int(point.y)
-        if (recognizer.state == .began) {
-            print("pan began at (\(xi),\(yi))")
-            self.startPoint = point
-        }
-        if (recognizer.state == .changed) {
-            if (point.y > self.startPoint.y + self.heightLimit) || (point.y < self.startPoint.y - self.heightLimit) {
-                self.exceededLimit = true
+        if (self.readyToTry == true) {
+            let point = recognizer.location(in: self.view)
+            let xi = Int(point.x)
+            let yi = Int(point.y)
+            if (recognizer.state == .began) {
+                print("pan began at (\(xi),\(yi))")
+                self.startPoint = point
             }
+            if (recognizer.state == .changed) {
+                if (point.y > self.startPoint.y + self.heightLimit) || (point.y < self.startPoint.y - self.heightLimit) {
+                    self.exceededLimit = true
+                }
+            }
+            if (recognizer.state == .ended) {
+                print ("pan ended at (\(xi),\(yi))")
+                self.finishPoint = point
+                self.verify()
+            }
+            
+            let dotView = UIView(frame: CGRect(x: point.x, y: point.y, width: 5.0, height: 5.0))
+            dotView.backgroundColor = UIColor.blue
+            dotView.tag = 100
+            self.view.addSubview(dotView)
         }
-        if (recognizer.state == .ended) {
-            print ("pan ended at (\(xi),\(yi))")
-            self.finishPoint = point
-            self.verify()
-        }
-        
-        let dotView = UIView(frame: CGRect(x: point.x, y: point.y, width: 5.0, height: 5.0))
-        dotView.backgroundColor = UIColor.blue
-        dotView.tag = 100
-        self.view.addSubview(dotView)
     }
     
     override func viewDidLoad() {
@@ -79,6 +82,7 @@ class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         imageView.isHidden = false
         self.tryButton.isHidden = false
+        self.readyToTry = false
     }
     
     @IBOutlet weak var tryButton: UIButton!
@@ -91,6 +95,7 @@ class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
         //dotView.removeFromSuperview()
         self.exceededLimit = false // reset
         imageView.isHidden = true
+        self.readyToTry = true
     }
 
     /*
