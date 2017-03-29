@@ -15,7 +15,7 @@ class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var finishLabel: UILabel!
     var startPoint: CGPoint!
     var finishPoint: CGPoint!
-    let heightLimit: CGFloat = 15.0
+    let heightLimit: CGFloat = 10.0
     var exceededLimit: Bool = false
     var readyToTry: Bool = true // bool so that cannot try again until tryAgain is tapped
  
