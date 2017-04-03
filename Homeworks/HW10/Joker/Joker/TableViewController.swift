@@ -111,13 +111,7 @@ class TableViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindFromAddJoke (segue: UIStoryboardSegue) {
-        let addVC = segue.source as! AddJokeViewController
-        if (addVC.newJokeReady) {
-            JokeDb.db.addJoke(first: addVC.lineOne, second: addVC.lineTwo, third: addVC.lineThree, answer: addVC.lineAnswer)
-        }
-    }
+    @IBAction func unwindFromAddJoke (segue: UIStoryboardSegue) { }
 
-    @IBAction func unwindFromViewEditJoke (segue: UIStoryboardSegue) {
-    }
+    @IBAction func unwindFromViewEditJoke (segue: UIStoryboardSegue) { }
 }

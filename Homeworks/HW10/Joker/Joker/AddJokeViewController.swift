@@ -10,12 +10,7 @@ import UIKit
 
 class AddJokeViewController: UIViewController, UITextFieldDelegate {
 
-    var newJokeReady: Bool = false
     var numJokes: Int = 1
-    var lineOne: String!
-    var lineTwo: String!
-    var lineThree: String!
-    var lineAnswer: String!
     
     @IBOutlet weak var AddJokeTitleLabel: UILabel!
     @IBOutlet weak var Line1TextField: UITextField!
@@ -32,11 +27,8 @@ class AddJokeViewController: UIViewController, UITextFieldDelegate {
             alertController.addAction(OkAction)
             present(alertController, animated: true, completion: nil)
         } else {
-            self.lineOne = Line1TextField.text!
-            self.lineTwo = Line2TextField.text!
-            self.lineThree = Line3TextField.text!
-            self.lineAnswer = AnswerTextField.text!
-            newJokeReady = true
+            // add joke to db
+            JokeDb.db.addJoke(first: Line1TextField.text!, second: Line2TextField.text!, third: Line3TextField.text!, answer: AnswerTextField.text!)
             performSegue(withIdentifier: "unwindFromAddJoke", sender: nil)
         }
     }

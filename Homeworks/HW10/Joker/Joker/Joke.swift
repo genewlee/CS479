@@ -14,22 +14,22 @@ class JokeDb {
     
     static let db = JokeDb() // singleton -- shared instance used throughout app
     
-    func getContext () -> NSManagedObjectContext {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        return appDelegate.persistentContainer.viewContext
-    }
+    var appDelegate: AppDelegate!
+    var context: NSManagedObjectContext!
     
-    func getAppDelegate () -> AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
+    init () {
+        self.appDelegate = UIApplication.shared.delegate as! AppDelegate
+        self.context = self.appDelegate.persistentContainer.viewContext
     }
     
     func addJoke (first: String = "", second: String = "", third: String = "", answer: String = "") {
-        let joke = NSEntityDescription.insertNewObject(forEntityName: "Joke", into: self.getContext())
+        let joke = NSEntityDescription.insertNewObject(forEntityName: "Joke", into: self.context)
         joke.setValue(first, forKey: "lineOne")
         joke.setValue(second, forKey: "lineTwo")
         joke.setValue(third, forKey: "lineThree")
         joke.setValue(answer, forKey: "lineAnswer")
-        self.getAppDelegate().saveContext()
+        
+        self.appDelegate.saveContext()
     }
     
     func removeJoke (_ first: String, _ answer: String) {
@@ -39,15 +39,15 @@ class JokeDb {
 
         fetchRequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [lineOnePred, answerPred])
         do {
-            let jokes = try getContext().fetch(fetchRequest)
+            let jokes = try self.context.fetch(fetchRequest)
             let joke = jokes.first!
             
-            getContext().delete(joke)
+            self.context.delete(joke)
         } catch {
                 print("removeJoke error: \(error)")
         }
         
-        self.getAppDelegate().saveContext() // In AppDelegate.swift
+        self.appDelegate.saveContext()
     }
     
     func editJoke (line: String, first: String, second: String, third: String, answer: String) {
@@ -55,7 +55,7 @@ class JokeDb {
         fetchRequest.predicate = NSPredicate(format: "lineOne == %@", line)
         
         do {
-            let jokes = try getContext().fetch(fetchRequest)
+            let jokes = try self.context.fetch(fetchRequest)
             let joke = jokes.first!
             
             joke.setValue(first, forKey: "lineOne")
@@ -66,7 +66,7 @@ class JokeDb {
             print("editJoke error: \(error)")
         }
         
-        self.getAppDelegate().saveContext() // In AppDelegate.swift
+        self.appDelegate.saveContext()
     }
     
     func fetchJoke(first: String) -> Joke {
@@ -75,7 +75,7 @@ class JokeDb {
         
         var joke: Joke!
         do {
-            let jokes = try getContext().fetch(fetchRequest)
+            let jokes = try self.context.fetch(fetchRequest)
             joke = jokes.first! as! Joke
             
             return joke
@@ -89,7 +89,7 @@ class JokeDb {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Joke")
         var tempJokes: [NSManagedObject]!
         do {
-            tempJokes = try getContext().fetch(fetchRequest)
+            tempJokes = try self.context.fetch(fetchRequest)
         } catch {
             print("fetchJokes error: \(error)")
         }

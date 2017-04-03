@@ -25,6 +25,7 @@ class ViewEditJokeViewController: UIViewController, UITextFieldDelegate {
             alertController.addAction(OkAction)
             present(alertController, animated: true, completion: nil)
         } else {
+            // update the db with the changes
             JokeDb.db.editJoke(line: firstLine, first: Line1TextField.text!, second: Line2TextField.text!, third: Line3TextField.text!, answer: AnswerTextField.text!)
             performSegue(withIdentifier: "unwindFromViewEditJoke", sender: nil)
         }
