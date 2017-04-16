@@ -8,12 +8,16 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var redBallNode: SKSpriteNode!
     var greenBallNode: SKSpriteNode!
     var startStopLabel: SKLabelNode!
+    
+    var bounceSoundAction: SKAction!
+    var audioPlayer: AVAudioPlayer!
     
     override func didMove(to view: SKView) {
         
@@ -44,17 +48,32 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         greenBallNode.physicsBody?.collisionBitMask = 0b110
         greenBallNode.physicsBody?.contactTestBitMask = 0b001
         self.addChild(greenBallNode)
+        
+        bounceSoundAction = SKAction.playSoundFileNamed("bounce.mp3", waitForCompletion: false)
+        
+        let musicURL = Bundle.main.url(forResource: "WSU-Fight-Song.mp3", withExtension: nil)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: musicURL!)
+        } catch {
+            print("error accessing music")
+        }
+        audioPlayer.volume = 0.25
+        audioPlayer.numberOfLoops = -1 // loop forever
     }
     
     func startGame () {
         self.isPaused = false
         self.startStopLabel.text = "Stop"
         redBallNode.physicsBody?.applyImpulse(CGVector(dx: 200.0, dy: 200.0))
+        
+        audioPlayer.play() // In startGame()
     }
     
     func pauseGame () {
         self.isPaused = true
         self.startStopLabel.text = "Start"
+        
+        audioPlayer.pause() // In pauseGame()
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -87,6 +106,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let blinkAction = SKAction.sequence([action1,action2])
         nodeA.run(blinkAction)
         nodeB.run(blinkAction)
+        
+        run(bounceSoundAction)
     }
     
     

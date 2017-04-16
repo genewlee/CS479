@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Bounce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="Acv-UA-kTI" kind="show" identifier="toSettingsView" id="IL8-f7-5YQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="PQa-pB-Vmc">
+            <objects>
+                <viewController id="Acv-UA-kTI" customClass="SettingsViewController" customModule="Bounce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sqo-mn-8Pl"/>
+                        <viewControllerLayoutGuide type="bottom" id="3lS-Fl-LQr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xjt-Xi-xLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fp0-zD-gSk">
+                                <rect key="frame" x="155.5" y="28" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Effects" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDq-wv-z7f">
+                                <rect key="frame" x="16" y="89" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoJ-Wj-yPD">
+                                <rect key="frame" x="16" y="129" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-5C-ZqR">
+                                <rect key="frame" x="310" y="84" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundEffectsSwitchTapped:" destination="Acv-UA-kTI" eventType="valueChanged" id="Ndg-tT-5UG"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ofU-io-yNM">
+                                <rect key="frame" x="310" y="124" width="51" height="31"/>
+                                <connections>
+                                    <action selector="backgroundMusicSwitchTapped:" destination="Acv-UA-kTI" eventType="valueChanged" id="WZ8-hh-OxI"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8G-Fh-pcC">
+                                <rect key="frame" x="169" y="181" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="Acv-UA-kTI" eventType="touchUpInside" id="dnZ-nC-vXh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z8G-Fh-pcC" firstAttribute="top" secondItem="EoJ-Wj-yPD" secondAttribute="bottom" constant="31" id="5hX-FZ-Bqr"/>
+                            <constraint firstItem="ofU-io-yNM" firstAttribute="trailing" secondItem="xjt-Xi-xLJ" secondAttribute="trailingMargin" id="6yd-cO-vrk"/>
+                            <constraint firstItem="EoJ-Wj-yPD" firstAttribute="top" secondItem="kDq-wv-z7f" secondAttribute="bottom" constant="19" id="7bp-PH-BPO"/>
+                            <constraint firstItem="ysi-5C-ZqR" firstAttribute="trailing" secondItem="xjt-Xi-xLJ" secondAttribute="trailingMargin" id="8Be-Zz-XWr"/>
+                            <constraint firstItem="EoJ-Wj-yPD" firstAttribute="centerY" secondItem="ofU-io-yNM" secondAttribute="centerY" id="KXF-Wf-2ec"/>
+                            <constraint firstItem="kDq-wv-z7f" firstAttribute="leading" secondItem="xjt-Xi-xLJ" secondAttribute="leadingMargin" id="TzL-Bd-7hf"/>
+                            <constraint firstItem="Fp0-zD-gSk" firstAttribute="top" secondItem="Sqo-mn-8Pl" secondAttribute="bottom" constant="8" id="UBz-3c-cY3"/>
+                            <constraint firstItem="EoJ-Wj-yPD" firstAttribute="leading" secondItem="xjt-Xi-xLJ" secondAttribute="leadingMargin" id="cAr-xv-Rpq"/>
+                            <constraint firstItem="Z8G-Fh-pcC" firstAttribute="centerX" secondItem="xjt-Xi-xLJ" secondAttribute="centerX" id="cWy-HO-gRo"/>
+                            <constraint firstItem="kDq-wv-z7f" firstAttribute="centerY" secondItem="ysi-5C-ZqR" secondAttribute="centerY" id="sIV-Fb-muW"/>
+                            <constraint firstItem="kDq-wv-z7f" firstAttribute="top" secondItem="Fp0-zD-gSk" secondAttribute="bottom" constant="40" id="vFW-FO-XrU"/>
+                            <constraint firstItem="Fp0-zD-gSk" firstAttribute="centerX" secondItem="xjt-Xi-xLJ" secondAttribute="centerX" id="wQJ-JU-hB5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LCn-sK-2pW"/>
+                    <connections>
+                        <outlet property="backgroundMusicSwitch" destination="ofU-io-yNM" id="O3U-7X-0Ux"/>
+                        <outlet property="soundEffectsSwitch" destination="ysi-5C-ZqR" id="517-Ve-4RP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fg-5o-J5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="37"/>
+        </scene>
+    </scenes>
+</document>
