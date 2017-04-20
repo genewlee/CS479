@@ -27,6 +27,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // Make walls bouncy
         let screenPhysicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        screenPhysicsBody.node?.name = "wall"
         screenPhysicsBody.friction = 0.0
         screenPhysicsBody.categoryBitMask = 0b100
         screenPhysicsBody.contactTestBitMask = 0b001
@@ -125,11 +126,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print("Contact: \(bodyNameA), \(bodyNameB)")
         
         var breakSound = true
-        // if either of the two bodies is a green ball, then the green ball node is removed from the scene
-        if contact.bodyA.node?.name == "greenBall" {
-            contact.bodyA.node?.removeFromParent()
-        } else if contact.bodyB.node?.name == "greenBall" {
+        
+        if (contact.bodyB.node?.name == "greenBall" && contact.bodyA.node?.name == "greenBall") { // too green balls hit exit out
+            return
+        } else if contact.bodyB.node?.name == "greenBall" && contact.bodyA.node?.name == "redBall" {
             contact.bodyB.node?.removeFromParent()
+        } else if contact.bodyA.node?.name == "greenBall" && contact.bodyB.node?.name == "redBall" {
+            contact.bodyA.node?.removeFromParent()
         } else { // hit only other physics body which is the wall/frame
             breakSound = false
         }
