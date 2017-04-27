@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-W0-Q50">
+                                <rect key="frame" x="140.5" y="28" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-Ft-c3O">
+                                <rect key="frame" x="16" y="67" width="87" height="30"/>
+                                <state key="normal" title="Select Video"/>
+                                <connections>
+                                    <action selector="selectVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OI9-hh-Wli"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZj-67-BJZ">
+                                <rect key="frame" x="16" y="105" width="72" height="30"/>
+                                <state key="normal" title="Play Video"/>
+                                <connections>
+                                    <action selector="playVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnD-77-kd8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrL-Vi-M0D">
+                                <rect key="frame" x="16" y="143" width="92" height="30"/>
+                                <state key="normal" title="Record Video"/>
+                                <connections>
+                                    <action selector="recordVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlC-Dn-a0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOc-aU-R15">
+                                <rect key="frame" x="16" y="181" width="77" height="30"/>
+                                <state key="normal" title="Save Video"/>
+                                <connections>
+                                    <action selector="saveVideoTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9jB-Xd-mWC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Abh-W0-Q50" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DFo-cX-6Hb"/>
+                            <constraint firstItem="pZj-67-BJZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DQb-rc-Sal"/>
+                            <constraint firstItem="Abh-W0-Q50" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ifn-PP-XP9"/>
+                            <constraint firstItem="LOc-aU-R15" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pp3-UC-8vv"/>
+                            <constraint firstItem="MrL-Vi-M0D" firstAttribute="top" secondItem="pZj-67-BJZ" secondAttribute="bottom" constant="8" id="X55-5D-rz7"/>
+                            <constraint firstItem="MrL-Vi-M0D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cdn-b1-jAW"/>
+                            <constraint firstItem="tx8-Ft-c3O" firstAttribute="top" secondItem="Abh-W0-Q50" secondAttribute="bottom" constant="18" id="gE7-3B-kf5"/>
+                            <constraint firstItem="pZj-67-BJZ" firstAttribute="top" secondItem="tx8-Ft-c3O" secondAttribute="bottom" constant="8" id="sbQ-mg-rYN"/>
+                            <constraint firstItem="LOc-aU-R15" firstAttribute="top" secondItem="MrL-Vi-M0D" secondAttribute="bottom" constant="8" id="vdf-Wd-mZu"/>
+                            <constraint firstItem="tx8-Ft-c3O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="znh-uK-HKE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
